@@ -1,0 +1,23 @@
+spring:
+  profiles: dev
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: ${config-server.uri:http://localhost:8888}
+      username: ${config-server.credentials.username:admin}
+      password: ${config-server.credentials.password:password}
+---
+spring:
+  profiles: independent
+  cloud:
+    config:
+      enabled: false
+---
+spring:
+  profiles: production
+  cloud:
+    config:
+      uri: ${config-server.uri}
+      username: ${config-server.credentials.username}
+      password: ${config-server.credentials.password}

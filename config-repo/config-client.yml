@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-client
+  profiles:
+    active: dev,local
+
+server:
+  port: 9999
+
+application:
+  printOnStart: true
+  text: Hello Client
+  root: false

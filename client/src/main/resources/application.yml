@@ -1,0 +1,6 @@
+server:
+  port: ${config-client.port:8899}
+
+spring:
+  application:
+    name: config-client
