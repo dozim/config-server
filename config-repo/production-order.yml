@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: production-order
+  profiles:
+    active: dev,local 
+
+application:
+  configuration:
+    root: false

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: application
+  profiles:
+    active: dev,local 
+
+application:
+  configuration:
+    root: true

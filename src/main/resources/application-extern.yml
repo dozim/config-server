@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: extern
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          uri: ${config-server.git.uri}
+          username: ${config-server.git.username}
+          password: ${config-server.git.password}

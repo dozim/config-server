@@ -1,0 +1,10 @@
+server:
+  port: ${config-server.port:8888}
+
+spring:
+  application:
+    name: config-server
+  security:
+    user:
+      name: ${config-server.credentials.username:admin}
+      password: ${config-server.credentials.password:password}
